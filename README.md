@@ -6,11 +6,11 @@
 
 https://botre.github.io/vue-sauce/
 
-<img src="example.png" alt="screenshot" width="75%" height="75%">
-
 ## About
 
 Automatically append up-to-date html documentation to your elements.
+
+<img src="example.png" alt="screenshot" width="75%" height="75%">
 
 ## Usage
 
