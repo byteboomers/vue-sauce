@@ -1,6 +1,6 @@
 **WORK IN PROGRESS**
 
-# vue-sauce
+# 🍝 vue-sauce
 
 > "View source" (😬) mixin for Vue.
 
