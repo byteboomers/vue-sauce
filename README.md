@@ -6,7 +6,7 @@
 
 https://botre.github.io/vue-sauce/
 
-<img src="example.png" alt="screenshot" width="200" height="200">
+<img src="example.png" alt="screenshot" width="75%" height="75%">
 
 ## About
 
