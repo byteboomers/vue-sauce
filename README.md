@@ -6,6 +6,8 @@
 
 https://botre.github.io/vue-sauce/
 
+![screenshot](./example.png)
+
 ## About
 
 Automatically append up-to-date html documentation to your elements.
