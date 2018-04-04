@@ -6,7 +6,7 @@
 
 https://botre.github.io/vue-sauce/
 
-![screenshot](./example.png =250x250)
+<img src="example.png" alt="screenshot" width="200" height="200">
 
 ## About
 
