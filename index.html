@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue-sauce</title>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/spark-ui/spark-ui-0.0.0/spark-ui.css">
+    <style>
+        .vue-sauce {
+            max-width: 640px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" class="container m2">
+        <div class="segment mx-auto max-width-4">
+            <h1 class="marketing header">🍝 vue-sauce</h1>
+            <p>"View source" (😬) mixin for Vue.</p>
+            <p>Automatically append up-to-date html documentation to your elements.</p>
+            <a href="#github">Github</a> |
+            <a href="#twitter">Twitter</a>
+            <h3>Usage</h3>
+            <p>Simply add v-sauce to the element you want to document.</p>
+            <h3>Example</h3>
+            <h4>Source:</h4>
+            <div>
+                <code>&lt;button v-sauce class=&quot;primary button&quot;&gt;Primary button&lt;/button&gt;</code>
+            </div>
+            <div>
+                <code>&lt;button v-sauce class=&quot;positive button&quot;&gt;Positive button&lt;/button&gt;</code>
+            </div>
+            <h4>Result:</h4>
+            <div>
+                <button v-sauce class="primary button">Primary button</button>
+                <button v-sauce class="positive button">Positive button</button>
+            </div>
+            <div class="divider"></div>
+            <a href="#github">Github</a> |
+            <a href="#twitter">Twitter</a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+    <script>
+        // Formatting helpers
+        function process(string) {
+            const div = document.createElement('div');
+            div.innerHTML = string.trim();
+            return format(div, 0).innerHTML;
+        }
+        function format(node, level) {
+            let indentBefore = new Array(level++ + 1).join('  '),
+                indentAfter = new Array(level - 1).join('  '),
+                textNode;
+            for (let i = 0; i < node.children.length; i++) {
+                textNode = document.createTextNode('\n' + indentBefore);
+                node.insertBefore(textNode, node.children[i]);
+                format(node.children[i], level);
+                if (node.lastElementChild == node.children[i]) {
+                    textNode = document.createTextNode('\n' + indentAfter);
+                    node.appendChild(textNode);
+                }
+            }
+            return node;
+        }
+        // Directive
+        Vue.directive('sauce', {
+            inserted: function (el) {
+                const div = document.createElement("div");
+                const pre = document.createElement("pre");
+                const code = document.createElement("code");
+                code.appendChild(document.createTextNode(process(el.outerHTML).trim()));
+                pre.appendChild(code);
+                div.appendChild(pre);
+                div.classList.add("vue-sauce")
+                el.parentNode.insertBefore(div, el.nextSibling);
+            }
+        })
+        new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello, world!'
+            }
+        })
+    </script>
+</body>
+
+</html>
