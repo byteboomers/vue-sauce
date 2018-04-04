@@ -1,5 +1,3 @@
-**WORK IN PROGRESS**
-
 # 🍝 vue-sauce
 
 > "View source" (😬) mixin for Vue.
