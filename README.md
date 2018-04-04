@@ -1,6 +1,6 @@
 # 🍝 vue-sauce
 
-> "View source" (😬) mixin for Vue.
+> "View source" (😬) directive for Vue.
 
 https://botre.github.io/vue-sauce/
 
