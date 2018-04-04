@@ -10,12 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Botre/vue-sauce.git"
   },
-  "keywords": [
-    "vue",
-    "documentation",
-    "automatic",
-    "autodoc"
-  ],
+  "keywords": ["vue", "documentation", "automatic", "autodoc"],
   "author": "Bjorn Krols",
   "license": "MIT",
   "bugs": {
