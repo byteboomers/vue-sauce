@@ -30,8 +30,8 @@ Example: https://botre.github.io/vue-sauce/
 
 ## Powered by
 
-* Babel
-* Webpack 4
+- Babel
+- Webpack 4
 
 ## License
 
