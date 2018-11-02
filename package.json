@@ -1,7 +1,7 @@
 {
   "name": "vue-sauce",
   "version": "0.0.4",
-  "description": "\"View source\" directive for Vue",
+  "description": "\"View source\" directive for Vue 🍝",
   "main": "dist/vue-sauce.js",
   "scripts": {
     "build": "webpack --mode production --progress"
