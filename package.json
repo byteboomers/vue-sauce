@@ -1,6 +1,6 @@
 {
   "name": "vue-sauce",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "\"View source\" directive for Vue 🍝",
   "main": "dist/vue-sauce.js",
   "scripts": {
