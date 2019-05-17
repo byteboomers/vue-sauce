@@ -1,6 +1,6 @@
 {
   "name": "vue-sauce",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "\"View source\" directive for Vue 🍝",
   "author": "Bjorn Krols (https://byteboomers.com)",
   "license": "MIT",
