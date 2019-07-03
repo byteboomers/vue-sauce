@@ -2,7 +2,7 @@
   "name": "vue-sauce",
   "description": "\"View source\" directive for Vue 🍝",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Bjorn Krols (https://byteboomers.com)",
   "license": "MIT",
   "keywords": [
